@@ -1,0 +1,12 @@
+<div class="image-and-words">
+  {#
+    * Although parameters are actually automatically passed in if defined in the *.stories.js file,
+    * it makes sense to use "with { x }" syntax because that is how twig would work in real life.
+  #}
+  {% include '@storybook/atoms/images/images.html.twig' with { image_url } %}
+  {% include '@storybook/atoms/typography/typography.html.twig' with { text } %}
+  {#
+    * Bonus example: include with custom variable defined in the template file itself:
+    * {% include '@storybook/atoms/typography/typography.html.twig' with { text: "Custom text defined in TWIG file" } %}
+  #}
+</div>
