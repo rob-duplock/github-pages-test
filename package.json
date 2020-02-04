@@ -5,7 +5,8 @@
   "scripts": {
     "build-storybook": "build-storybook -c storybook/.storybook -o storybook/build",
     "storybook": "start-storybook -c storybook/.storybook",
-    "deploy-storybook": "storybook-to-ghpages"
+    "deploy-storybook-to-github-pages": "storybook-to-ghpages",
+    "deploy-storybook": "npm run deploy-storybook-to-github-pages -- --remote=github --existing-output-dir=storybook/build --branch=master"
   },
   "dependencies": {
     "@babel/cli": "^7.4.3",
@@ -62,5 +63,10 @@
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "storybook-deployer": {
+    "gitUsername": "rob-duplock",
+    "gitEmail": "rduplock@doghouse.agency",
+    "commitMessage": "Deploy Storybook [skip ci]"
+  }
 }

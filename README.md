@@ -18,3 +18,9 @@
   * my-component.stories.js
 * Follow the existing content structure of other components
 * Add your component to the `storybook/atoms/atoms.stories.js` file
+
+## Deploy the storybook
+### Don't use this until our github pages repo is set up!
+`npm run build-storybook`
+
+`npm run deploy-storybook`
