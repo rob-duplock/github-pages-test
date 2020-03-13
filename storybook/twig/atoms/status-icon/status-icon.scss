@@ -1,0 +1,15 @@
+.icon-status {
+  vertical-align: middle;
+
+  &-success {
+    color: $color-success;
+  }
+
+  &-warning {
+    color: $color-warning;
+  }
+
+  &-error {
+    color: $color-danger;
+  }
+}

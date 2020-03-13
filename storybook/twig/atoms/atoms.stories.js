@@ -4,11 +4,13 @@ import { withActions } from '@storybook/addon-actions';
 // Import the stories.
 import Typography from './typography/typography.stories';
 import Images from './images/images.stories';
+import StatusIcon from './status-icon/status-icon.stories';
 
 // Add the story to our stories {} so we can loop over it.
 let stories = {
   Typography,
   Images,
+  StatusIcon,
 };
 
 // Loop over each story and add them to the story book.
