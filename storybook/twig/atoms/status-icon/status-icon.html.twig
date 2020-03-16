@@ -1,0 +1,7 @@
+{% for icon in icons %}
+  {% for icon_type in icon_types %}
+    <span class="icon-status icon-status-{{ icon_type }}">
+      <i class="material-icons">{{ icon }}</i>
+    </span>
+  {% endfor %}
+{% endfor %}

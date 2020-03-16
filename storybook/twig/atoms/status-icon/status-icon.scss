@@ -1,0 +1,20 @@
+.icon-status {
+  display: inline-block;
+  vertical-align: middle;
+
+  &-success {
+    color: $color-success;
+  }
+
+  &-warning {
+    color: $color-warning;
+  }
+
+  &-error {
+    color: $color-danger;
+  }
+}
+
+.material-icons {
+  vertical-align: middle;
+}
