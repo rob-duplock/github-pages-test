@@ -1,4 +1,5 @@
 .icon-status {
+  display: inline-block;
   vertical-align: middle;
 
   &-success {
@@ -12,4 +13,8 @@
   &-error {
     color: $color-danger;
   }
+}
+
+.material-icons {
+  vertical-align: middle;
 }

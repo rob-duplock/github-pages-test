@@ -2,8 +2,8 @@ import StatusIconExample from './status-icon-example.html.twig';
 
 StatusIconExample.data = {
   parameters: {
-    icon: ['info'],
-    types: ['success'],
+    icons: ['info'],
+    icon_types: ['success'],
   }
 };
 
