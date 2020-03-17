@@ -9,6 +9,7 @@ import StatusMessage from './status-message/status-message.stories';
 import InputLabel from './input-label/input-label.stories';
 import InputLabelInline from './input-label-inline/input-label-inline.stories';
 import TextArea from './text-area/text-area.stories';
+import TextInputErrorMessage from './text-input-error-message/text-input-error-message.stories';
 
 // Add the story to our stories {} so we can loop over it.
 let stories = {
@@ -19,6 +20,7 @@ let stories = {
   InputLabel,
   InputLabelInline,
   TextArea,
+  TextInputErrorMessage,
 };
 
 // Loop over each story and add them to the story book.
