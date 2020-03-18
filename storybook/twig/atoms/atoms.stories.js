@@ -7,6 +7,7 @@ import Images from './images/images.stories';
 import StatusIcon from './status-icon/status-icon.stories';
 import StatusMessage from './status-message/status-message.stories';
 import InputLabel from './input-label/input-label.stories';
+import InputLabelInline from './input-label-inline/input-label-inline.stories';
 
 // Add the story to our stories {} so we can loop over it.
 let stories = {
@@ -15,6 +16,7 @@ let stories = {
   StatusIcon,
   StatusMessage,
   InputLabel,
+  InputLabelInline,
 };
 
 // Loop over each story and add them to the story book.
