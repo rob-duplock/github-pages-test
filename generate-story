@@ -1,0 +1,78 @@
+#!/bin/sh
+#
+# A script to generate the atom or molecule files (twig, SCSS and JS).
+#
+
+BASE_DIR=./storybook/twig
+
+# Function to generate atom and molecule.
+generate() {
+  component=$1
+
+  echo "${component} name (e.g. basic-textbox) :"
+  while [ -z "$name" ]
+  do
+    read name
+  done
+
+  # Unable to create the atom or molecule if it exists.
+  while [ -d "${BASE_DIR}/${component}s/${name}" ]
+  do
+    echo "${component} ${name} exists!"
+    read name
+  done
+
+  # Set the variable name to be used by the import statement in the JS file.
+  echo "variable name for ${name} (e.g. BasicTextbox) :"
+  while [ -z "$var_name" ]
+  do
+    read var_name
+  done
+
+  echo "Creating ${component} ${name}..."
+
+  # Create the directory
+  directory=${BASE_DIR}/${component}s/${name}
+  mkdir $directory
+
+  # Create the twig file.
+  twig_file=${name}.html.twig
+  touch ${directory}/${twig_file}
+  printf "<div class=\"${name}\">{{ text }}</div>" >> ${directory}/${twig_file}
+
+  # Create the SCSS file.
+  scss_file=${name}.scss
+  touch ${directory}/${scss_file}
+  printf ".${name} {\n\n}\n" >> ${directory}/${scss_file}
+
+  # Create the story JS file.
+  story_file=${name}.stories.js
+  touch ${directory}/${story_file}
+  printf "import ${var_name} from './${twig_file}';\n\n" >> ${directory}/${story_file}
+  printf "${var_name}.data = {\n  parameters: {\n    text: 'This is ${name}.',\n  },\n};\n\n" >> ${directory}/${story_file}
+  printf "export default ${var_name};\n" >> ${directory}/${story_file}
+
+  echo "${component} ${name} created successfully!"
+
+  exit 0
+}
+
+echo "Create components:"
+echo "  [1] atom"
+echo "  [2] molecule"
+echo "  [0] exit"
+
+# Loop until a valid selection is made.
+while read select
+do
+  case $select in
+    1) generate atom
+       ;;
+    2) generate molecule
+       ;;
+    0) exit 0
+       ;;
+    *) echo "Invalid selection!"
+       ;;
+  esac
+done
