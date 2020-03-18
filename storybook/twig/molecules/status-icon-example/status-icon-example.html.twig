@@ -1,11 +1,14 @@
 <div>
   {% include '@storybook/atoms/status-icon/status-icon.html.twig' with { icons: ['info'], icon_types: ['error'] } %}
+  {% include '@storybook/atoms/status-message/status-message.html.twig' with { message_types: ['error'], message: 'This is a danger alert!' } %}
 </div>
 
 <div>
   {% include '@storybook/atoms/status-icon/status-icon.html.twig' with { icons: ['info'], icon_types: ['warning'] } %}
+  {% include '@storybook/atoms/status-message/status-message.html.twig' with { message_types: ['warning'], message: 'This is a warning alert!' } %}
 </div>
 
 <div>
   {% include '@storybook/atoms/status-icon/status-icon.html.twig' with { icons: ['check_circle'], icon_types: ['success'] } %}
+  {% include '@storybook/atoms/status-message/status-message.html.twig' with { message_types: ['success'], message: 'This is a success alert!' } %}
 </div>
