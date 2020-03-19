@@ -31,6 +31,7 @@
     "babel-loader": "^8.0.5",
     "core-js": "^3.0.1",
     "cypress-cucumber-preprocessor": "^1.15.1",
+    "drupal-attribute": "^1.0.2",
     "file-loader": "^4.2.0",
     "lit-element": "^2.1.0",
     "lit-html": "^1.0.0",
