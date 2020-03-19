@@ -1,3 +1,8 @@
 .text-input {
   padding: 1rem;
+
+  &.error {
+    background-color: $color-danger-background;
+    border: 1px solid $color-danger-border;
+  }
 }
