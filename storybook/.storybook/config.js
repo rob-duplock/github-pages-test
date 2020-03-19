@@ -28,4 +28,8 @@ addParameters({
   }
 });
 
+
+const storyWrapper = story => `<section style="padding: 1rem;">${story()}</section>`;
+addDecorator(storyWrapper);
+
 configure(loadStories, module);

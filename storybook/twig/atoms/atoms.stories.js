@@ -2,6 +2,7 @@ import {storiesOf} from '@storybook/html';
 import { withActions } from '@storybook/addon-actions';
 
 // Import the stories.
+import CheckboxInput from './checkbox-input/checkbox-input.stories';
 import Typography from './typography/typography.stories';
 import Images from './images/images.stories';
 import StatusIcon from './status-icon/status-icon.stories';
@@ -13,6 +14,7 @@ import TextInputErrorMessage from './text-input-error-message/text-input-error-m
 
 // Add the story to our stories {} so we can loop over it.
 let stories = {
+  CheckboxInput,
   Typography,
   Images,
   StatusIcon,
