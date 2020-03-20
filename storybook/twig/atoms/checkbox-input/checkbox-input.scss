@@ -1,0 +1,38 @@
+.checkbox-input {
+  &__item {
+    position: relative;
+  }
+
+  &__faux-input {
+    width: 1em;
+    height: 1em;
+    border: 1px solid $color-secondary-dark;
+    background-color: $color-primary-tint;
+    box-sizing: border-box;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__input {
+    opacity: 0;
+  }
+
+  &__input:checked + &__faux-input {
+    border-color: $color-primary-dark;
+
+    &:after {
+      content: '';
+      width: 4px;
+      height: 8px;
+      border-bottom: 2px solid $color-primary-dark;
+      border-right: 2px solid $color-primary-dark;
+      display: block;
+      position: absolute;
+      left: 4px;
+      top: 1px;
+      transform: rotate(45deg);
+    }
+  }
+}
