@@ -1,8 +1,9 @@
 import RadioInput from './radio-input.html.twig';
+import markdown from './readme.md';
 
 RadioInput.data = {
   other: {
-    notes: "A generic HTML radio input element."
+    notes: { markdown }
   },
 };
 

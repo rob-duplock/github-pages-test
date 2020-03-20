@@ -13,20 +13,22 @@ import TextArea from './text-area/text-area.stories';
 import TextInputErrorMessage from './text-input-error-message/text-input-error-message.stories';
 import RadioInput from './radio-input/radio-input.stories';
 import ButtonIconInline from './button-icon-inline/button-icon-inline.stories';
+import Divider from './divider/divider.stories';
 
 // Add the story to our stories {} so we can loop over it.
 let stories = {
-  CheckboxInput,
   Typography,
   Images,
   StatusIcon,
   StatusMessage,
   InputLabel,
   InputLabelInline,
+  CheckboxInput,
+  RadioInput,
   TextArea,
   TextInputErrorMessage,
-  RadioInput,
   ButtonIconInline,
+  Divider,
 };
 
 // Loop over each story and add them to the story book.
