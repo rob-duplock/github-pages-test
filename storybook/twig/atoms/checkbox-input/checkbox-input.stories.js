@@ -3,6 +3,7 @@ import markdown from './readme.md';
 
 CheckboxInput.data = {
   name: 'Checkbox Input',
+  group: "Form Elements",
   other: {
     notes: { markdown }
   },

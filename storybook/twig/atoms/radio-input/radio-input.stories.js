@@ -3,6 +3,7 @@ import markdown from './readme.md';
 
 RadioInput.data = {
   name: 'Radio Input',
+  group: "Form Elements",
   other: {
     notes: { markdown }
   },

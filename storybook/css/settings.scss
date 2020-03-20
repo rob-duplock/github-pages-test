@@ -1,8 +1,16 @@
 // "Global" sass variables go here.
 
-// Font varialbes.
+// Font variables.
 $base-font-size: 16px;
 $base-font-family: 'Open Sans';
+
+$font-size-regular: $base-font-size;        // 16px
+$font-size-medium: $base-font-size * .875;  //14px
+$font-size-small: $base-font-size * .75;     //12px
+
+$font-weight-regular: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
 
 // Colour variables.
 $color-black: #000000;

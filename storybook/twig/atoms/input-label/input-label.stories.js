@@ -3,6 +3,7 @@ import markdown from './readme.md'
 
 InputLabel.data = {
   name: 'Input Label',
+  group: "Form Elements",
   parameters: {
     text: "First Name:",
   },
