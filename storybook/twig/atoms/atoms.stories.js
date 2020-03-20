@@ -14,6 +14,7 @@ import TextInputErrorMessage from './text-input-error-message/text-input-error-m
 import RadioInput from './radio-input/radio-input.stories';
 import ButtonIconInline from './button-icon-inline/button-icon-inline.stories';
 import Divider from './divider/divider.stories';
+import LinkBody from './link-body/link-body.stories'
 
 // Add the story to our stories {} so we can loop over it.
 let stories = {
@@ -29,13 +30,15 @@ let stories = {
   TextInputErrorMessage,
   ButtonIconInline,
   Divider,
+  LinkBody,
 };
 
 // Loop over each story and add them to the story book.
 Object.keys(stories).forEach((key) => {
+  let name = stories[key].data.name || key;
   storiesOf('Atoms', module)
     .addDecorator(withActions(stories[key].data.decorators || 'none'))
-    .add(key, () => stories[key](stories[key].data.parameters || {}), stories[key].data.other || {});
+    .add(name, () => stories[key](stories[key].data.parameters || {}), stories[key].data.other || {});
 });
 
 export { stories };
