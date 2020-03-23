@@ -1,19 +1,22 @@
 import { storiesOf } from '@storybook/html';
-import drupalAttribute from 'drupal-attribute';
+import { withKnobs, text, boolean } from '@storybook/addon-knobs';
 import TextInput from './text-input.html.twig';
 
 storiesOf('Atoms', module)
+  .addDecorator(withKnobs)
   .add('TextInput', () => {
     let attributes = {
       id: 'default-id',
       name: 'default-name',
-      class: ['text-input'],
-      placeholder: 'Enter value',
+      classes: ['text-input'],
+      placeholder: text('Placeholder', 'Enter value'),
     };
 
-    let variables = {
-      attributes: new drupalAttribute(Object.entries(attributes)),
-    };
+    let errorClass = boolean('Error', false);
+    if (errorClass) {
+      attributes.classes.push('error');
+      attributes.placeholder = text('Error message', 'Error');
+    }
 
-    return TextInput(variables);
+    return TextInput(attributes);
   });
