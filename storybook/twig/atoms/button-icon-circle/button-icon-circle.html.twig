@@ -1,0 +1,5 @@
+{% for media in social_media %}
+  <a href="{{ media.url }}" class="btn btn--inline btn--circle btn--icon btn--icon-{{ media.type }}" aria-label="{{ media.label }}">
+    <img src="{{ media.img_file }}" alt="{{ media.img_alt }}">
+  </a>
+{% endfor %}

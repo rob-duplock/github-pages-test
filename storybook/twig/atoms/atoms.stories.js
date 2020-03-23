@@ -14,9 +14,10 @@ import TextInputErrorMessage from './text-input-error-message/text-input-error-m
 import RadioInput from './radio-input/radio-input.stories';
 import ButtonIconInline from './button-icon-inline/button-icon-inline.stories';
 import Divider from './divider/divider.stories';
-import LinkBody from './link-body/link-body.stories'
-import LinkMeta from './link-meta/link-meta.stories'
-import LinkUnderlined from './link-underlined/link-underlined.stories'
+import LinkBody from './link-body/link-body.stories';
+import LinkMeta from './link-meta/link-meta.stories';
+import LinkUnderlined from './link-underlined/link-underlined.stories';
+import ButtonIconCircle from './button-icon-circle/button-icon-circle.stories';
 
 // Add the story to our stories {} so we can loop over it.
 let stories = {
@@ -35,6 +36,7 @@ let stories = {
   LinkBody,
   LinkMeta,
   LinkUnderlined,
+  ButtonIconCircle,
 };
 
 // Loop over each story and add them to the story book.
