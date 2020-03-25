@@ -4,8 +4,8 @@
   }
 
   &--icon {
-    background-color: $color-primary-dark;
-    color: $color-white;
+    background-color: color(primary-dark);
+    color: color(white);
     border: none;
     padding: $button-icon--padding;
   }

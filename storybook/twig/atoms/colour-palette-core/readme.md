@@ -41,6 +41,15 @@ $colour-palette-core: (
 ```
 ### SCSS Colour Functions
 ```scss
+/**
+ * Return a color from the color palette map.
+ *
+ * @param $color-name
+ *   The named key in the color map.
+ *
+ * @param $map
+ *   The color map to return the color from. Defaults to $colour-palette-core.
+ */
 @function color($color-name, $map: $colour-palette-core) {
   @return map-get($map, $color-name);
 }

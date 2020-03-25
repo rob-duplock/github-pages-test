@@ -6,8 +6,8 @@
   &__faux-input {
     width: 1em;
     height: 1em;
-    border: 1px solid $color-secondary-dark;
-    background-color: $color-primary-tint;
+    border: 1px solid color(secondary-dark);
+    background-color: color(primary-tint);
     box-sizing: border-box;
     pointer-events: none;
     position: absolute;
@@ -20,14 +20,14 @@
   }
 
   &__input:checked + &__faux-input {
-    border-color: $color-primary-dark;
+    border-color: color(primary-dark);
 
     &:after {
       content: '';
       width: 4px;
       height: 8px;
-      border-bottom: 2px solid $color-primary-dark;
-      border-right: 2px solid $color-primary-dark;
+      border-bottom: 2px solid color(primary-dark);
+      border-right: 2px solid color(primary-dark);
       display: block;
       position: absolute;
       left: 4px;
