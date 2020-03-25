@@ -1,4 +1,5 @@
 import ButtonIconCircle from './button-icon-circle.html.twig';
+import markdown from './readme.md'
 
 ButtonIconCircle.data = {
   parameters: {
@@ -18,6 +19,9 @@ ButtonIconCircle.data = {
         img_alt: 'Twitter icon',
       }
     ],
+  },
+  other: {
+    notes: { markdown }
   },
 };
 
