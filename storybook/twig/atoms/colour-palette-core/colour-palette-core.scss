@@ -1,0 +1,23 @@
+.color-preview__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.color-preview {
+  width: 200px;
+  margin: 8px;
+  border: 1px solid color(grey-tint-25);
+
+  &__color {
+    height: 50px;
+    border-bottom: 1px solid color(grey-tint-25);
+  }
+
+  &__meta {
+    padding: 12px;
+  }
+
+  &__name {
+    margin-bottom: .5em;
+  }
+}
