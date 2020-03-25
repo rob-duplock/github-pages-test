@@ -1,6 +1,6 @@
 a.btn {
-  width: 20px;
-  height: 20px;
+  width: $button-social-icon--width;
+  height: $button-social-icon--height;
 
   &--inline {
     display: inline-block;
@@ -14,7 +14,7 @@ a.btn {
     background-color: $color-primary-tint;
     color: $color-primary-light;
     border: none;
-    padding: 1rem;
+    padding: $button-social-icon--padding;
   }
 
   img {
