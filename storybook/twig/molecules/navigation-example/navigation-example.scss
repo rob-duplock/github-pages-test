@@ -7,7 +7,8 @@
     list-style: none;
 
     li {
-      margin-right: 10px;
+      width: $navigation-width;
+      margin-right: $navigation-spacing;
 
       &:last-child {
         margin-right: 0;
@@ -17,7 +18,7 @@
 }
 
 .nav {
-  padding: 10px;
+  padding: $navigation-padding-top-bottom $navigation-padding-sides;
   cursor: pointer;
 
   &-header {
