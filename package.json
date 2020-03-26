@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "build-storybook": "build-storybook -c storybook/.storybook -o storybook/build",
-    "storybook": "start-storybook -c storybook/.storybook",
+    "storybook": "start-storybook -c storybook/.storybook -s storybook/assets",
     "deploy-storybook-to-github-pages": "storybook-to-ghpages",
     "deploy-storybook": "npm run deploy-storybook-to-github-pages -- --remote=github --existing-output-dir=storybook/build --branch=master"
   },
