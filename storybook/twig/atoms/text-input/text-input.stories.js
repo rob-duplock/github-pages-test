@@ -2,9 +2,9 @@ import { storiesOf } from '@storybook/html';
 import { withKnobs, text, boolean } from '@storybook/addon-knobs';
 import TextInput from './text-input.html.twig';
 
-storiesOf('Atoms', module)
+storiesOf('Atoms/Form Elements', module)
   .addDecorator(withKnobs)
-  .add('TextInput', () => {
+  .add('Text Input', () => {
     let attributes = {
       id: 'default-id',
       name: 'default-name',

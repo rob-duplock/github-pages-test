@@ -2,7 +2,7 @@
   padding: 1rem;
 
   &.error {
-    background-color: $color-danger-background;
-    border: 1px solid $color-danger-border;
+    background-color: color(danger-tint);
+    border: 1px solid color(danger);
   }
 }

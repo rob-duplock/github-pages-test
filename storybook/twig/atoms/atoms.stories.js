@@ -18,6 +18,7 @@ import Divider from './divider/divider.stories';
 import LinkBody from './link-body/link-body.stories';
 import LinkMeta from './link-meta/link-meta.stories';
 import LinkUnderlined from './link-underlined/link-underlined.stories';
+import ColourPalette from './colour-palette-core/colour-palette-core.stories'
 
 // Add the story to our stories {} so we can loop over it.
 let stories = {
@@ -37,6 +38,7 @@ let stories = {
   LinkBody,
   LinkMeta,
   LinkUnderlined,
+  ColourPalette
 };
 
 // Loop over each story and add them to the story book.

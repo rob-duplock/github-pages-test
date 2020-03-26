@@ -1,0 +1,6 @@
+
+<div class="color-preview__container">
+  {% for color in colors %}
+    {% include './colour.html.twig' with { name: color.name, hex: color.hex } %}
+  {% endfor %}
+</div>

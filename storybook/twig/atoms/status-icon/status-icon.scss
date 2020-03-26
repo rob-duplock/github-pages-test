@@ -3,15 +3,15 @@
   vertical-align: middle;
 
   &-success {
-    color: $color-success;
+    color: color(success);
   }
 
   &-warning {
-    color: $color-warning;
+    color: color(warning);
   }
 
   &-error {
-    color: $color-danger;
+    color: color(danger);
   }
 }
 

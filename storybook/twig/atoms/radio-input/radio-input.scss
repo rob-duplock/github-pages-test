@@ -7,8 +7,8 @@
     width: 1em;
     height: 1em;
     border-radius: 50%;
-    border: 1px solid $color-secondary-dark;
-    background-color: $color-primary-tint;
+    border: 1px solid color(secondary-dark);
+    background-color: color(primary-tint);
     box-sizing: border-box;
     pointer-events: none;
     position: absolute;
@@ -21,7 +21,7 @@
   }
 
   &__input:checked + &__faux-input {
-    background-color: $color-primary-dark;
-    box-shadow: inset 0 0 0 2.5px $color-primary-tint;
+    background-color: color(primary-dark);
+    box-shadow: inset 0 0 0 2.5px color(primary-tint);
   }
 }

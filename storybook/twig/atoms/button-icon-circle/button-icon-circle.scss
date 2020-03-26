@@ -11,8 +11,8 @@ a.btn {
   }
 
   &--icon {
-    background-color: $color-primary-tint;
-    color: $color-primary-light;
+    background-color: color(primary-tint);
+    color: color(primary-light);
     border: none;
     padding: $button-social-icon--padding;
   }

@@ -1,24 +1,12 @@
-// "Global" sass variables go here.
+# Colour Palette
 
-// Font variables.
-$base-font-size: 16px;
-$base-font-family: 'Open Sans';
+---
 
-$font-size-regular: $base-font-size;        // 16px
-$font-size-medium: $base-font-size * .875;  //14px
-$font-size-small: $base-font-size * .75;     //12px
+### Description
+> Core colour palette
 
-$font-weight-regular: 400;
-$font-weight-semibold: 600;
-$font-weight-bold: 700;
-
-// Button variables.
-$button-icon--padding: 0.5rem;
-$button-social-icon--width: 20px;
-$button-social-icon--height: $button-social-icon--width;
-$button-social-icon--padding: 1rem;
-
-// Colour variables.
+### SCSS Colour Map
+```scss
 $colour-palette-core: (
   // Base colors.
   primary-dark:           #1F5788,
@@ -32,7 +20,6 @@ $colour-palette-core: (
   grey-tint-25:           #CFCFCF,
   accent:                 #43838C,
   white:                  #ffffff,
-  black:                  #000000,
   // Gradient colors.
   gradient-overlay-start: #204560,
   gradient-overlay-end:   #2A6998,
@@ -51,3 +38,27 @@ $colour-palette-core: (
   auxiliary-blue:         #DCEAF5,
   auxiliary-green:        #ECF2E6,
 );
+```
+### SCSS Colour Functions
+```scss
+/**
+ * Return a color from the color palette map.
+ *
+ * @param $color-name
+ *   The named key in the color map.
+ *
+ * @param $map
+ *   The color map to return the color from. Defaults to $colour-palette-core.
+ */
+@function color($color-name, $map: $colour-palette-core) {
+  @return map-get($map, $color-name);
+}
+```
+
+### Example Usage
+```scss
+.example {
+  color: color(primary-light);
+  border: 1px solid color(brand-grey-2);
+}
+```
