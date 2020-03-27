@@ -1,8 +1,13 @@
+import { storiesOf } from '@storybook/html';
+import {withKnobs, boolean} from '@storybook/addon-knobs';
 import NavigationExample from './navigation-example.html.twig';
 
-NavigationExample.data = {
-  parameters: {
-  },
-};
+storiesOf('Molecules', module)
+  .addDecorator(withKnobs)
+  .add('Navigation Example', () => {
+    let attributes = {
+      header_active: boolean('Header active', false) ? 'active' : '',
+    };
 
-export default NavigationExample;
+    return NavigationExample(attributes);
+  });

@@ -1,23 +1,9 @@
 <div class="navigation-example">
   <ul>
     <li>
-      <div class="nav nav-header">
+      <div class="nav nav-header {{ header_active }}">
         {#<span class="material-icons">remove_circle_outline</span>#}
         {% include '@storybook/atoms/nav-header/nav-header.html.twig' with { text: 'Navigation 1' } %}
-      </div>
-    </li>
-
-    <li>
-      <div class="nav nav-header">
-        {#<span class="material-icons">remove_circle_outline</span>#}
-        {% include '@storybook/atoms/nav-header/nav-header.html.twig' with { text: 'Navigation 2' } %}
-      </div>
-    </li>
-
-    <li>
-      <div class="nav nav-header">
-        {#<span class="material-icons">remove_circle_outline</span>#}
-        {% include '@storybook/atoms/nav-header/nav-header.html.twig' with { text: 'Navigation 3' } %}
       </div>
     </li>
   </ul>
