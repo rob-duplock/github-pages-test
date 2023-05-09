@@ -23,7 +23,7 @@
     "@storybook/addon-knobs": "^5.3.14",
     "@storybook/addon-notes": "^5.3.14",
     "@storybook/addon-viewport": "^5.3.14",
-    "@storybook/html": "^5.3.14",
+    "@storybook/html": "^7.0.9",
     "@storybook/storybook-deployer": "^2.8.3",
     "@types/node": "^12.12.29",
     "@webcomponents/webcomponentsjs": "^2.4.2",
@@ -46,7 +46,7 @@
     "postcss-url": "^8.0.0",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
-    "resolve-url-loader": "^3.1.0",
+    "resolve-url-loader": "^3.1.5",
     "sass-loader": "^8.0.2",
     "stylelint": "^9.10.1",
     "stylelint-config-amazee": "^1.0.3",
@@ -57,7 +57,7 @@
     "twig-loader": "git+https://github.com/AmazeeLabs/twig-loader.git",
     "url-loader": "^2.1.0",
     "webpack": "^4.42.0",
-    "webpack-cli": "^3.3.11",
+    "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.10.3"
   },
   "cypress-cucumber-preprocessor": {
